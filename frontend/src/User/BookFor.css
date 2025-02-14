@@ -1,0 +1,85 @@
+/* Custom Styles for User's BookFor Page */
+
+/* Body Styles */
+.user-page-body {
+    background-color: #f4f7fa; /* Soft background color for the page */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean and modern font */
+}
+
+/* Header Styles */
+.user-page-header {
+    color: #343a40; /* Darker color for the header text */
+    font-size: 2.5rem; /* Larger font size for the heading */
+    font-weight: 600; /* Bold header */
+    margin-bottom: 40px; /* Space below the heading */
+}
+
+/* Container Styles */
+.user-page-container {
+    max-width: 1200px; /* Limiting the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+/* Row Styles */
+.user-page-row {
+    display: flex;
+    justify-content: space-around; /* Distribute cards evenly */
+    align-items: center; /* Center the cards vertically */
+    flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
+}
+
+/* Card Styles */
+.user-page-cuscard {
+    border: none; /* Remove default border */
+    border-radius: 0.75rem; /* Rounded corners for the card */
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow around the card */
+    padding: 30px; /* Adequate padding for content inside the card */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+    width: 100%; /* Full width on small screens */
+    max-width: 400px; /* Max width of the card */
+    margin-bottom: 20px; /* Space below each card */
+    text-align: center; /* Centering text within the card */
+}
+
+.user-page-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Card Title Styles */
+.user-page-card-title {
+    font-size: 1.5rem; /* Slightly larger title font */
+    color: #007bff; /* Blue color for the title */
+    font-weight: 600; /* Bold title */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+/* Card Text Styles */
+.user-page-card-text {
+    color: #495057; /* Dark gray color for the description */
+    font-size: 1rem;
+    margin-bottom: 20px; /* Space below the text */
+}
+
+/* Button Styles */
+.user-page-btn {
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text on the button */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1rem; /* Button font size */
+    border-radius: 0.25rem; /* Slightly rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.user-page-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .user-page-cuscard {
+        max-width: 100%; /* Cards will take full width on smaller screens */
+    }
+}

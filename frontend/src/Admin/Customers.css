@@ -1,0 +1,35 @@
+/* Invoices.css */
+
+/* Container Styles */
+.container {
+    justify-self: auto;
+}
+
+/* Header Styles */
+.header {
+    margin-bottom: 40px;
+}
+
+/* Table Styles */
+/* Team.css */
+
+/* Custom styles for the Team component */
+.table {
+    border-radius: 0.5rem;
+    overflow-y: visible;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+    /* Light gray for odd rows */
+}
+
+.table-striped tbody tr:hover {
+    background-color: #f1f1f1;
+    /* Light gray on hover */
+}

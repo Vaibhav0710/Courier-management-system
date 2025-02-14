@@ -1,0 +1,68 @@
+/* Ensure the entire page takes up at least full height */
+.orders-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the container takes the full viewport height */
+}
+
+/* Push the footer to the bottom */
+.orders-content {
+  flex: 1;
+}
+
+/* Orders Main Container */
+.orders-wrapper {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.orders-wrapper .orders-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Tabs */
+.orders-wrapper .orders-tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 16px;
+}
+
+.orders-wrapper .orders-tab-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.orders-wrapper .orders-tab-button.active {
+  color: #ffd900;
+  border-bottom: 2px solid #ffd900;
+}
+
+/* Orders List */
+.orders-wrapper .orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Footer should always be at the bottom */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}

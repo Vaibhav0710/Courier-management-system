@@ -1,0 +1,125 @@
+/* Orders Page Container - Only for Delivery Page */
+.orders.delivery-page {
+  width: 95%;  /* Increased width for more space */
+  max-width: 1400px;  /* Increased max-width for a broader layout */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 40px;  /* Reduced padding for a tighter layout */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  
+  /* Use Flexbox for centering */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  /* Ensure the content is aligned from the top */
+  margin: 0 auto; /* Centers the content horizontally */
+  min-height: calc(100vh - 200px);  /* Ensure the container takes full height minus footer space */
+  margin-bottom: 50px;  /* Add margin-bottom to prevent overlap with the footer */
+}
+
+/* Orders Title - Only for Delivery Page */
+.orders.delivery-page .orders-title {
+  font-size: 32px;  /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 20px;  /* Reduced margin bottom */
+  color: #00bfff;
+  background-color: #f2f2f2;
+  width: 80%;
+  text-align: center;  /* Centered the title */
+  padding: 10px;  /* Added padding */
+}
+
+/* Order Table - Only for Delivery Page */
+.orders.delivery-page .order-table {
+  width: 100%;  /* Full width */
+  margin: 0 auto; /* Center the table */
+  border-collapse: collapse;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 10px;  /* Reduced top margin to reduce the gap */
+}
+
+/* Table Headers and Cells - Only for Delivery Page */
+.orders.delivery-page .order-table th,
+.orders.delivery-page .order-table td {
+  border: 1px solid #ddd;
+  padding: 15px;  /* Increased padding */
+  text-align: left;
+  font-size: 18px;  /* Increased font size for better readability */
+  max-width: 250px;  /* Added max-width for each column */
+  overflow: hidden;  /* Prevents text overflow */
+  text-overflow: ellipsis;  /* Shows ellipsis when text overflows */
+  word-wrap: break-word;  /* Breaks long words to avoid overflow */
+  white-space: normal;  /* Allows text to wrap to the next line */
+}
+
+/* Table Header Styling - Only for Delivery Page */
+.orders.delivery-page .order-table th {
+  background-color: #00bfff;
+  color: white;
+}
+
+/* Zebra Striping for Even Rows - Only for Delivery Page */
+.orders.delivery-page .order-table tr:nth-child(even) {
+  background-color: #f9f9f9;  /* Slightly lighter background for even rows */
+}
+
+/* Hover Effect on Table Rows - Only for Delivery Page */
+.orders.delivery-page .order-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Action Buttons Container - Only for Delivery Page */
+.orders.delivery-page .action-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Accept Button - Only for Delivery Page */
+.orders.delivery-page .accept-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.orders.delivery-page .accept-btn:hover {
+  background-color: #45a049;
+}
+
+
+/* Responsive Design - Only for Delivery Page */
+@media (max-width: 768px) {
+  .orders.delivery-page .orders-page {
+    padding: 30px;  /* Reduced padding on smaller screens */
+  }
+
+  .orders.delivery-page .orders-title {
+    font-size: 28px;  /* Adjusted font size for smaller screens */
+    margin-bottom: 20px;  /* Adjusted bottom margin */
+  }
+
+  .orders.delivery-page .order-table th,
+  .orders.delivery-page .order-table td {
+    font-size: 16px;  /* Adjusted font size for smaller screens */
+    padding: 12px;  /* Reduced padding for smaller screens */
+  }
+
+  .orders.delivery-page .order-table {
+    width: 100%;  /* Full width on small screens */
+  }
+
+  .orders.delivery-page .accept-btn,
+  .orders.delivery-page .dismiss-btn {
+    font-size: 14px;  /* Adjusted button font size */
+    padding: 5px 10px;  /* Adjusted padding for buttons */
+  }
+}

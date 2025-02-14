@@ -1,0 +1,128 @@
+/* Profile Page */
+.profile-page {
+    background: linear-gradient(to bottom, #f0f2f5, #dce1e6);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self:baseline;
+    width: 100%;
+}
+
+/* Profile Card */
+.profile-card {
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: scale(1.02);
+}
+
+/* Title */
+.profile-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Profile Details */
+.profile-details p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Profile Sections */
+.profile-section {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Labels */
+.profile-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Inputs & Textarea */
+.profile-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s ease-in-out;
+}
+
+.profile-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Buttons */
+.profile-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Edit Button */
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Save Button */
+.save-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .profile-card {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .profile-input {
+        font-size: 14px;
+    }
+
+    .profile-button {
+        font-size: 14px;
+    }
+}

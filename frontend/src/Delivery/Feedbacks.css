@@ -1,0 +1,147 @@
+/* Ensure the delivery-page class on body takes full height */
+body.delivery-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  /* Full viewport height */
+  margin: 0;
+  background-color: #f0f0f0;  /* Optional: for better contrast */
+}
+
+/* Feedbacks Container */
+.feedbacks-container {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  gap: 15px;
+  padding: 35px 0;  /* Added padding to the top and bottom */
+  background: white;
+  border-radius: 15px;
+  position: relative;
+  width: 100%;  /* Ensure it occupies full width */
+  max-width: 1200px; /* Maximum width of the feedbacks container */
+  flex-wrap: wrap;  /* Allows cards to wrap on smaller screens */
+  justify-content: center;  /* Centers cards horizontally */
+  align-items: flex-start;  /* Align items to the top */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);  /* Optional: shadow around the container */
+  margin-top: 40px; /* Added margin to avoid sticking to the top */
+  margin-bottom: 80px; /* Ensure space between feedback and footer */
+  
+}
+
+/* Feedback Card */
+.feedback-card {
+  background: #00bfff; /* Deep Sky Blue */
+  color: #ffffff; /* White text for strong contrast */
+  font-weight: 500;
+  padding: 20px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  margin: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.feedback-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff; /* Warm golden yellow for contrast */
+}
+
+.feedback-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f8f8f8; /* Slightly softer white for less strain */
+}
+
+
+
+
+/* Quote Styling */
+.quote {
+  font-size: 40px;
+}
+
+/* Feedback Title */
+.feedback-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Feedback Text */
+.feedback-text {
+  margin: 10px 0;
+}
+
+/* Stars */
+.stars {
+  font-size: 18px;
+  color: yellow;
+}
+
+/* User Info */
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* User Image */
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* User Name */
+.user-name {
+  font-weight: bold;
+}
+
+/* User Role */
+.user-role {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust feedback container for smaller screens */
+  .feedbacks-container {
+    padding: 20px;
+    width: 100%;
+    margin-top: 30px; /* Adjust top margin for mobile */
+    margin-bottom: 60px; /* Adjust bottom margin for mobile */
+  }
+
+  .feedback-card {
+    width: 90%;  /* Make the cards smaller on mobile */
+  }
+
+  .quote {
+    font-size: 30px;
+  }
+
+  .feedback-title {
+    font-size: 18px;
+  }
+
+  .stars {
+    font-size: 16px;
+  }
+
+  .user-name {
+    font-size: 14px;
+  }
+
+  .user-role {
+    font-size: 10px;
+  }
+}

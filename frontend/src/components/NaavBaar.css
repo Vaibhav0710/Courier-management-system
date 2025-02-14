@@ -1,0 +1,50 @@
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.navbar-logo {
+    margin-left: 15px;
+}
+/* Ensure content doesn't get overlapped by navbar */
+body {
+    padding-top: 70px; /* Adjust based on navbar height */
+}
+
+.navbar {
+    height: 60px;
+}
+
+.navBack{
+    background-color: #00BFFF;
+}
+  
+.small-btn {
+    font-size: 0.75rem !important;
+    padding: 0.3rem 0.6rem !important;
+    border-radius: 3px;
+    height: auto;
+    line-height: 2.0;
+    border: 1px solid white !important;
+    color: white !important;
+    background-color: transparent !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .small-btn:hover {
+    background-color: #f8f9fa !important;
+    color: black !important;
+  }
+
+  @media (max-width: 991px) { /* Adjust for mobile view */
+    .navbar-collapse {
+        background-color: #00BFFF; /* Ensure background matches navbar */
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        padding: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+  

@@ -1,0 +1,190 @@
+/* General Styles */
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  padding: 20px;
+}
+
+/* Profile Container */
+.profile-container {
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: 80px; /* Moves it down */
+  margin-bottom: 100px; /* Adds space so it doesn't touch the footer */
+}
+
+
+.profile-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Card */
+.profile-card {
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+/* Profile Title */
+.profile-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Profile Details */
+.profile-details p {
+  font-size: 18px;
+  margin: 12px 0;
+  line-height: 1.5;
+  color: #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+/* Vehicle Icon */
+.profile-details p svg {
+  font-size: 22px;
+  color: #ff7b00;
+}
+
+/* Availability Toggle */
+.availability {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+  margin-top: 20px;
+}
+
+.availability input {
+  width: 20px;
+  height: 20px;
+  accent-color: #28a745;
+  cursor: pointer;
+}
+
+/* Profile Form */
+.profile-form label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+  margin-top: 10px;
+  display: block;
+}
+
+.profile-form input,
+.profile-form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: #f9f9f9;
+  transition: 0.3s ease-in-out;
+}
+
+.profile-form input:focus,
+.profile-form select:focus {
+  border-color: #ff7b00;
+  background: white;
+  outline: none;
+}
+
+/* Profile Buttons */
+.profile-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Edit Button */
+.edit-btn {
+  background: #ff7b00;
+  color: white;
+  margin-top: 15px;
+}
+
+.edit-btn:hover {
+  background: #e66a00;
+  transform: translateY(-2px);
+}
+
+/* Save Button */
+.save-btn {
+  background: #28a745;
+  color: white;
+  margin-top: 15px;
+}
+
+.save-btn:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+
+  .profile-details p {
+    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-form input,
+  .profile-form select {
+    font-size: 16px;
+  }
+
+  .availability {
+    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-button {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,94 @@
+/* General Styles */
+.truck-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 600px; /* Increase the top padding to prevent overlap with navbar */
+}
+
+.truck-page-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+/* Services Section */
+.services-section {
+    margin-bottom: 50px;
+}
+
+.services-heading {
+    font-size: 1.75rem;
+    color: #495057;
+    margin-bottom: 20px;
+}
+
+.services-table {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.services-table th {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.services-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Booking Section */
+.booking-section {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.booking-heading {
+    font-size: 1.75rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.booking-form .form-group {
+    margin-bottom: 20px;
+}
+
+.booking-form .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+.booking-form .alert {
+    margin-bottom: 20px;
+}
+
+.dropdown-menu {
+    z-index: 1050 !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .truck-page-container {
+        padding: 10px;
+        padding-top: 80px; /* Adjust top padding for smaller screens */
+    }
+
+    .services-heading {
+        font-size: 1.5rem;
+    }
+
+    .services-table th,
+    .services-table td {
+        font-size: 0.875rem;
+    }
+
+    .booking-heading {
+        font-size: 1.5rem;
+    }
+}
+

@@ -1,0 +1,97 @@
+/* Ensure full-page layout */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Main container to manage layout */
+.packages-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Content should grow to fill space */
+.content {
+  flex-grow: 1;
+  /* Space below navbar */
+  padding-bottom: 80px;
+  /* Space above footer */
+}
+
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  min-width: 120px;
+  /* Ensures consistent size */
+}
+
+.status-pending {
+  background-color: red;
+}
+
+.status-in-progress {
+  background-color: orange;
+  color: black;
+  /* Ensure text is readable on yellow */
+}
+
+.status-out-for-delivery {
+  background-color: lightgreen;
+  color: black;
+  /* Ensure text is readable on light green */
+}
+
+.status-completed {
+  background-color: green;
+}
+
+.status-unknown {
+  background-color: gray;
+}
+
+/* Table styling */
+.table {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+  /* Light gray for odd rows */
+}
+
+.table-striped tbody tr:hover {
+  background-color: #f1f1f1;
+  /* Light gray on hover */
+}
+
+/* Footer should stay at the bottom */
+.footeer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+}

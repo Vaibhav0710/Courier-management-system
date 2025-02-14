@@ -1,0 +1,52 @@
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .logout-message {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logout-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Optional, for rounded corners */
+  }
+  
+  /* Red color for the Logout button */
+  button.btn-danger {
+    background-color: red;
+    border-color: red;
+  }
+  
+  button.btn-danger:hover {
+    background-color: darkred;
+    border-color: darkred;
+  }
+  
+  /* Green color for the Cancel button */
+  button.btn-secondary {
+    background-color: green;
+    border-color: green;
+  }
+  
+  button.btn-secondary:hover {
+    background-color: darkgreen;
+    border-color: darkgreen;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  

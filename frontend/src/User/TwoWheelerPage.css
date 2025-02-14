@@ -1,0 +1,122 @@
+/* Custom Styles for Two-Wheeler Page */
+
+/* Body Styles */
+.two-wheeler-page-body {
+    background-color: #f8f9fa; /* Light background color */
+    font-family: 'Arial', sans-serif; /* Simple, readable font */
+}
+
+/* Container Styling */
+.two-wheeler-page-container {
+    max-width: 1100px; /* Limiting container width for better alignment */
+    margin: 0 auto; /* Centering the container */
+    padding: 20px; /* Adding padding for breathing space */
+    padding-top: 200px;
+}
+
+/* Header Styles */
+.two-wheeler-page-header {
+    text-align: center; /* Centered main header */
+    color: #343a40; /* Dark color for contrast */
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+/* Subheader Styles */
+.two-wheeler-page-subheader {
+    font-size: 1.75rem;
+    color: #495057;
+    margin-top: 40px;  /* Ensure the margin-top isn't too small */
+    text-align: left; /* Align text to the left */
+    visibility: visible !important; /* Ensure it's always visible */
+}
+
+/* Table Styles */
+.two-wheeler-page-table {
+    margin-top: 30px; /* Space above the table */
+    background-color: #fff; /* White background for the table */
+    border-radius: 0.5rem; /* Rounded corners for the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.two-wheeler-page-table th, .two-wheeler-page-table td {
+    padding: 15px; /* Adequate padding inside cells */
+    text-align: center; /* Centered text for table content */
+}
+
+.two-wheeler-page-table th {
+    background-color: #007bff; /* Blue background for table header */
+    color: #fff; /* White text in the header */
+    font-weight: bold;
+}
+
+.two-wheeler-page-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+.two-wheeler-page-table tbody tr:hover {
+    background-color: #e9ecef; /* Hover effect for rows */
+}
+
+/* Form Styles */
+.two-wheeler-page-form {
+    background-color: #fff; /* White background for the form */
+    border-radius: 0.75rem; /* Rounded corners for the form */
+    padding: 30px; /* Adequate padding inside the form */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin-top: 40px; /* Space above the form */
+}
+
+.two-wheeler-page-form .form-group {
+    margin-bottom: 20px; /* Space between form elements */
+}
+
+.two-wheeler-page-form label {
+    font-weight: 600; /* Bold labels */
+    color: #343a40; /* Dark color for labels */
+}
+
+/* Input and Button Styling */
+.two-wheeler-page-form .form-control {
+    border-radius: 0.25rem; /* Slightly rounded corners for inputs */
+    border: 1px solid #ccc; /* Light border color */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow around inputs */
+}
+
+.two-wheeler-page-form .form-control:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow effect on focus */
+}
+
+.two-wheeler-page-btn {
+    background-color: #28a745; /* Green color for the submit button */
+    color: white; /* White text on the button */
+    border: none; /* No border on the button */
+    padding: 12px 25px; /* Adequate padding for the button */
+    font-size: 1rem; /* Font size for the button */
+    border-radius: 0.25rem; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.two-wheeler-page-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .two-wheeler-page-table {
+        font-size: 0.9rem; /* Slightly smaller font size for smaller screens */
+    }
+
+    .two-wheeler-page-header {
+        font-size: 2rem; /* Smaller font size for header */
+    }
+
+    .two-wheeler-page-subheader {
+        font-size: 1.5rem; /* Smaller font size for subheader */
+    }
+
+    .two-wheeler-page-container {
+        padding: 10px; /* Less padding on small screens */
+    }
+}

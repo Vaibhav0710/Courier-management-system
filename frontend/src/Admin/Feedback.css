@@ -1,0 +1,65 @@
+/* FAQ.css */
+
+/* Container Styles */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    justify-self:center;
+    /* Added padding for better spacing */
+}
+
+/* Accordion Styles */
+.accordion-item {
+    border: 1px solid #ddd;
+    /* Light border around each item */
+    border-radius: 0.5rem;
+    /* Rounded corners */
+    margin-bottom: 10px;
+    /* Space between accordion items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.accordion-header {
+    background-color: #f8f9fa;
+    /* Light background for headers */
+}
+
+.accordion-button {
+    font-weight: bold;
+    /* Bold text for buttons */
+    color: #333;
+    /* Dark text color */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e9ecef;
+    /* Light gray background when expanded */
+    color: #000;
+    /* Dark text color when expanded */
+}
+
+.accordion-body {
+    background-color: #ffffff;
+    /* White background for body */
+    color: #555;
+    /* Dark gray text color */
+    padding: 15px;
+    /* Added padding for better text spacing */
+}
+
+/* Hover Effects */
+.accordion-button:hover {
+    background-color: #e2e6ea;
+    /* Slightly darker gray on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .accordion-button {
+        font-size: 16px;
+        /* Adjust font size for smaller screens */
+    }
+}

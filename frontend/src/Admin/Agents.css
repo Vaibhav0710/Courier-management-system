@@ -1,0 +1,69 @@
+/* General Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.text-online {
+  color: green;
+  font-weight: bold;
+}
+
+.text-offline {
+  color: black;
+  font-weight: normal;
+}
+
+/* Table Container Styles */
+.table-container {
+  overflow-y: visible;
+  width: 100%;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header Styles */
+.table thead th {
+  background-color: #1976D2;
+  /* Bootstrap primary color */
+  color: #ffffff;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Table Body Styles */
+.table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+  /* Light gray on hover */
+}
+
+/* Table Cell Styles */
+.table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Specific Cell Styles */
+.table tbody td.name {
+  color: green;
+  /* Highlight name in green */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .table {
+    font-size: 14px;
+    /* Smaller font size on mobile */
+  }
+}
