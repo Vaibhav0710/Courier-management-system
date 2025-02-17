@@ -24,7 +24,6 @@ function DeliveryLogin() {
         localStorage.setItem("userType", "delivery_partner");
         localStorage.setItem("deliveryAgentID", response.deliveryAgentID);
         localStorage.setItem("earnings", response.earnings);
-
         toast.success("Login successful!", { position: "top-right" }); // Success Toast
         navigate("/delivery-agent-home");
       } else {

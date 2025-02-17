@@ -19,6 +19,7 @@ function AdminLogin() {
       localStorage.setItem("token", response.token);
       localStorage.setItem("userType", "admin");
       localStorage.setItem("adminId", response.adminId);
+      // localStorage.setItem("adminId", );
       setRole("admin");
       toast.success("Login successful!", { position: "top-right" }); // Success Toast
       navigate("/admin-dashboard");

@@ -24,8 +24,9 @@ function UserLogin() {
 
       if (response) {
         localStorage.setItem("token", response.token); // Save JWT token
-        localStorage.setItem("customerId", response.customerId); // Save customer ID
-        setRole("user"); // Update role in context
+        localStorage.setItem("customerId", response.customerId);
+        localStorage.setItem("userType", "user"); // Save customer ID
+        // setRole("user"); // Update role in context
 
         toast.success("Login successful!", { position: "top-right" }); // Success Toast
         navigate("/user-home"); // Redirect to user home page
@@ -43,7 +44,12 @@ function UserLogin() {
         <h2>User Login</h2>
         <form onSubmit={handleLoginSubmit}>
           <input type="email" name="email" placeholder="Email" required />
-          <input type="password" name="password" placeholder="Password" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
           <button type="submit">Login</button>
         </form>
         <div>
