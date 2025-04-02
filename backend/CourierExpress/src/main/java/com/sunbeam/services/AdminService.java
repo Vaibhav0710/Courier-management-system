@@ -57,7 +57,6 @@ public class AdminService {
 
     public Admin createAdmin(Admin admin) {
         // Encrypt the password
-        admin.setPassword(admin.getPassword());
         admin.setRegistrationDate(LocalDateTime.now());
         admin.setStatus(Status.OFFLINE);
         admin.setLastOnline(LocalDateTime.now());
