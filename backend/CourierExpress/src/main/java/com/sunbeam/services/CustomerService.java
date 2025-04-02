@@ -74,7 +74,7 @@ public class CustomerService {
 	 */
 	public Customer getCustomerById(Long id) {
 		Customer cust = customerRepository.findById(id).orElse(null);
-		cust.setPassword(null);
+		cust.setPassword(""); // not sending password
 		return cust;
 	}
 
